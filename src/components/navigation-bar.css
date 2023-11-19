@@ -1,0 +1,43 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.navBar{
+ background-color: grey;
+ padding: 20px;
+ max-width: 50%;
+ height:auto;
+ border: 1px solid black;
+ border-left: none;
+}
+
+.nav-item{
+    list-style: none;
+    margin: 50px;
+    border: 1px solid black;
+    text-align: center;
+    height: 100%;
+    width: 90%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    margin: 5px;
+    margin-bottom: 30px;
+}
+
+.nav-item:hover{
+    background-color: #999;
+}
+
+.nav-links{
+    text-decoration: none;
+    font-size: 200%;
+    color:black;
+}
+
+.hide-navigation{
+    cursor: pointer;
+}

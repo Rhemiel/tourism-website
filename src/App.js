@@ -5,8 +5,9 @@ function App() {
   return (
     <>
       <Router>
-        <Navigation/>
-        
+        <div class="navigation-bar">
+          <Navigation/>
+        </div>
       </Router>
     </>
   );

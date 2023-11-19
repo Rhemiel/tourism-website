@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import './navigation-bar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Navigation(){
     const [click, setClick] = useState(false);
@@ -9,6 +12,7 @@ function Navigation(){
     return(
         <>
             <nav className="navBar">
+                <span className="hide-navigation"><FontAwesomeIcon icon={faBars} /></span>
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
                         
@@ -16,7 +20,7 @@ function Navigation(){
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
-                    <ul className={click ? 'navv-menu active' : 'nav-menu'}>
+                    <ul className='nav-menu'>
                         <li className='nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                                 Home
